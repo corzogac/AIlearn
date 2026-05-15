@@ -1,5 +1,25 @@
-node_modules/
+# OS
 .DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs & temp
 *.log
-dist/
+*.tmp
+*.bak
+
+# Environment
 .env
+
+# Build output
+dist/
+
+# Node (if ever added)
+node_modules/
+npm-debug.log*
