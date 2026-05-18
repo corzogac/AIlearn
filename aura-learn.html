@@ -38,222 +38,439 @@
     <span class="page-hero-tag">Teaching Framework</span>
     <h1 class="page-hero-title">AURA-Learn</h1>
     <p class="page-hero-sub">Agentic Understanding, Reflection and Adaptation for Learning — an AI-supported educational framework that personalises learning while strengthening the role of the teacher.</p>
+    <div class="aura-hero-pills">
+      <span class="aura-hero-pill pill-student">🧑‍🎓 Student Agent</span>
+      <span class="aura-hero-pill pill-teacher">👩‍🏫 Teacher Agent</span>
+      <span class="aura-hero-pill pill-evaluator">📊 Evaluator Agent</span>
+    </div>
   </div>
 
-  <!-- ═══════════════ INTRO ═══════════════ -->
-  <section class="section section-light">
+  <!-- ═══════════════ INTRO PILLARS ═══════════════ -->
+  <section class="section section-white">
     <div class="container">
-      <div class="aura-intro">
-        <p>
-          AURA-Learn is a teaching framework in which AI agents support students, teachers, and course evaluators
-          throughout a structured learning process. The central idea is not to replace the teacher, but to create
-          an intelligent learning environment where each student receives adaptive support, the teacher receives
-          meaningful pedagogical insight, and the course continuously improves through reflective evaluation.
-        </p>
-      </div>
-
-      <!-- Agent overview cards -->
-      <div class="agent-cards-grid">
-        <div class="agent-card agent-card-student">
-          <div class="agent-card-icon">🧑‍🎓</div>
-          <h3>Student Agent</h3>
-          <p>A personal AI learning guide for each student. Provides exercises, examples, explanations, games, and videos — adapted to the student's learning style, progress, and difficulties. Follows the full learning cycle and produces daily reflections.</p>
+      <div class="intro-pillars">
+        <div class="intro-pillar al-reveal">
+          <div class="intro-pillar-icon">🎯</div>
+          <h3>Central Idea</h3>
+          <p>Not to replace the teacher, but to create an intelligent learning environment where each student receives adaptive support and teachers gain meaningful pedagogical insight.</p>
         </div>
-        <div class="agent-card agent-card-teacher">
-          <div class="agent-card-icon">👩‍🏫</div>
-          <h3>Teacher Agent</h3>
-          <p>A pedagogical assistant for the lecturer. Synthesises progress reports from all student agents, identifies group-level patterns — strengths, misconceptions, pacing — and helps prepare targeted face-to-face sessions.</p>
+        <div class="intro-pillar al-reveal">
+          <div class="intro-pillar-icon">🔄</div>
+          <h3>Continuous Feedback</h3>
+          <p>Three interconnected agents create a closed feedback loop: individual learning informs group-level teaching, which feeds course-level evaluation and continuous improvement.</p>
         </div>
-        <div class="agent-card agent-card-evaluator">
-          <div class="agent-card-icon">📊</div>
-          <h3>Evaluator Agent</h3>
-          <p>An independent course observer. Monitors knowledge development before and after the course, compares expected outcomes with actual progress, and builds a long-term evidence base to improve future course editions.</p>
+        <div class="intro-pillar al-reveal">
+          <div class="intro-pillar-icon">🌍</div>
+          <h3>Environmental Focus</h3>
+          <p>Designed for water and environmental science education, covering watershed analysis, hydraulics, water quality, climate impacts, modelling, and policy decision-making.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════ DETAILED SECTIONS ═══════════════ -->
+  <!-- ═══════════════ ARCHITECTURE DIAGRAM ═══════════════ -->
+  <section class="section section-azure" id="framework">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Framework Architecture</span>
+        <h2 class="section-title">The Complete Learning System</h2>
+        <p class="section-subtitle">How professors, AI agents, and students collaborate in a dynamic, feedback-driven educational environment for water resources learning.</p>
+      </div>
+
+      <div class="diagram-split">
+
+        <!-- Left: image -->
+        <div class="diagram-img-panel al-reveal">
+          <div class="diagram-img-wrap" id="diagWrap" onclick="openLightbox()" title="Click to view full size">
+            <img
+              src="assets/img/Image1_Erasmus+_3.png"
+              alt="AURA-Learn AI-Supported Education Scheme — full architecture diagram"
+              class="diagram-main-img"
+            />
+            <div class="diagram-img-overlay">
+              <span class="diagram-zoom-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                View full size
+              </span>
+            </div>
+          </div>
+          <p class="diagram-caption">AI-Supported Education Scheme for Water Resources Learning · Ai-LEARN Consortium, 2025</p>
+        </div>
+
+        <!-- Right: breakdown -->
+        <div class="diagram-desc al-reveal">
+          <h3 class="diagram-desc-title">Key System Components</h3>
+
+          <div class="diag-comp-list">
+
+            <div class="diag-comp">
+              <div class="diag-comp-icon dc-prof">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+              </div>
+              <div class="diag-comp-body">
+                <strong>Professor</strong>
+                <span>Academic leader — guides, mentors, and supports learning. Sets the pedagogical direction and remains the human authority throughout the course.</span>
+              </div>
+            </div>
+
+            <div class="diag-comp">
+              <div class="diag-comp-icon dc-asst">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+              </div>
+              <div class="diag-comp-body">
+                <strong>Professor Assistant Agent</strong>
+                <span>Pedagogical co-pilot. Synthesises all student-agent reports, identifies group patterns, and surfaces targeted teaching recommendations.</span>
+              </div>
+            </div>
+
+            <div class="diag-comp">
+              <div class="diag-comp-icon dc-stud">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+              </div>
+              <div class="diag-comp-body">
+                <strong>Student Agents (A–F)</strong>
+                <span>Each student has a personalised AI guide handling their specific topic — from watershed analysis and hydraulics to policy and decision-making.</span>
+              </div>
+            </div>
+
+            <div class="diag-comp">
+              <div class="diag-comp-icon dc-cont">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+              </div>
+              <div class="diag-comp-body">
+                <strong>Learning Content &amp; Resources</strong>
+                <span>Adaptive exercises, case studies, virtual labs, simulations, video resources, and structured reflection activities — all personalised per student.</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="diag-feedback-banner">
+            <span class="feedback-loop-icon">↻</span>
+            <div>
+              <strong>Feedback Loop</strong>
+              <p>Student agent reports flow back to the Professor Assistant Agent, which generates an AI summary and targeted suggestions — closing the learning loop continuously.</p>
+            </div>
+          </div>
+
+          <div class="diag-topics">
+            <span class="diag-topics-label">Core Topics</span>
+            <div class="diag-topic-tags">
+              <span>Hydrology &amp; Runoff</span>
+              <span>Sustainability</span>
+              <span>Floods &amp; Droughts</span>
+              <span>Water Quality</span>
+              <span>Climate Impacts</span>
+              <span>Remote Sensing</span>
+              <span>Decision Support</span>
+              <span>Policy &amp; Economics</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ LIGHTBOX ═══════════════ -->
+  <div class="lb-overlay" id="lbOverlay" onclick="closeLightbox()">
+    <div class="lb-inner" onclick="event.stopPropagation()">
+      <button class="lb-close" onclick="closeLightbox()" aria-label="Close">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <img src="assets/img/Image1_Erasmus+_3.png" alt="AURA-Learn Framework — Full Size" />
+      <p class="lb-caption">AI-Supported Education Scheme for Water Resources Learning · Ai-LEARN Consortium, 2025</p>
+    </div>
+  </div>
+
+  <!-- ═══════════════ THREE AGENTS (CLEAN CARDS) ═══════════════ -->
   <section class="section section-white">
     <div class="container">
+      <div class="section-header">
+        <span class="section-tag">The Three Agents</span>
+        <h2 class="section-title">Roles &amp; Responsibilities</h2>
+        <p class="section-subtitle">Each agent operates at a different level of the system, creating a coherent and self-improving pedagogical architecture.</p>
+      </div>
 
-      <!-- Student Agent -->
-      <div class="aura-section">
-        <div class="aura-section-header">
-          <div class="aura-section-icon aura-section-icon-blue">🧑‍🎓</div>
+      <div class="agents-trio">
+
+        <div class="agent-tile student al-reveal" id="student-card">
+          <div class="agent-tile-head">
+            <div class="agent-tile-icon ati-stu">🧑‍🎓</div>
+            <span class="agent-tier-badge badge-stu">Individual Level</span>
+          </div>
+          <h3>Student Agent</h3>
+          <p>A personal AI learning guide for each student. Provides exercises, examples, explanations, games, and videos adapted to learning style, progress, and difficulties. Follows the full learning cycle.</p>
+          <ul class="agent-feature-list">
+            <li><span class="afl-dot dot-stu"></span>Adapts to individual learning style and pace</li>
+            <li><span class="afl-dot dot-stu"></span>Follows the full structured learning cycle</li>
+            <li><span class="afl-dot dot-stu"></span>Produces daily reflections and progress summaries</li>
+            <li><span class="afl-dot dot-stu"></span>Recommends next steps and areas for review</li>
+          </ul>
+          <a href="#student-detail" class="agent-tile-link link-stu">Student Agent in detail →</a>
+        </div>
+
+        <div class="agent-tile teacher al-reveal" id="teacher-card">
+          <div class="agent-tile-head">
+            <div class="agent-tile-icon ati-tea">👩‍🏫</div>
+            <span class="agent-tier-badge badge-tea">Group Level</span>
+          </div>
+          <h3>Teacher Agent</h3>
+          <p>A pedagogical assistant for the lecturer. Synthesises progress reports from all student agents, identifies group-level patterns — strengths, misconceptions, pacing — and prepares targeted teaching guidance.</p>
+          <ul class="agent-feature-list">
+            <li><span class="afl-dot dot-tea"></span>Aggregates all student-level reports</li>
+            <li><span class="afl-dot dot-tea"></span>Identifies group-wide patterns and gaps</li>
+            <li><span class="afl-dot dot-tea"></span>Suggests questions and discussion points</li>
+            <li><span class="afl-dot dot-tea"></span>Flags students who may need extra support</li>
+          </ul>
+          <a href="#teacher-detail" class="agent-tile-link link-tea">Teacher Agent in detail →</a>
+        </div>
+
+        <div class="agent-tile evaluator al-reveal" id="evaluator-card">
+          <div class="agent-tile-head">
+            <div class="agent-tile-icon ati-eva">📊</div>
+            <span class="agent-tier-badge badge-eva">Course Level</span>
+          </div>
+          <h3>Evaluator Agent</h3>
+          <p>An independent course observer. Monitors knowledge development before and after the course, compares expected outcomes with actual progress, and builds a long-term evidence base to improve future editions.</p>
+          <ul class="agent-feature-list">
+            <li><span class="afl-dot dot-eva"></span>Pre/post knowledge assessments</li>
+            <li><span class="afl-dot dot-eva"></span>Compares expected vs. actual learning gains</li>
+            <li><span class="afl-dot dot-eva"></span>Identifies most effective teaching strategies</li>
+            <li><span class="afl-dot dot-eva"></span>Feeds a longitudinal evidence database</li>
+          </ul>
+          <a href="#evaluator-detail" class="agent-tile-link link-eva">Evaluator Agent in detail →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ DETAILED: STUDENT ═══════════════ -->
+  <section class="section section-azure" id="student-detail">
+    <div class="container">
+      <div class="detail-layout">
+        <div class="detail-aside al-reveal">
+          <div class="detail-aside-icon dai-stu">🧑‍🎓</div>
           <h2>The Student Learning Agent</h2>
+          <p class="detail-level">Individual Level · Personalised Guidance</p>
+          <p class="detail-aside-blurb">Acts as a personalised tutor and learning companion — it does not simply answer questions. It follows the learning process and helps the student build understanding progressively.</p>
         </div>
-        <p class="lead">Each student has an individual AI guide. This agent acts as a personalised tutor and learning companion — it does not simply answer questions. It follows the learning process and helps the student build understanding progressively.</p>
-        <p>For example, if a student struggles with a mathematical concept, the agent may first provide an intuitive explanation, then a small visual example, then a guided exercise, and finally a question that checks whether the student can apply the idea independently. The agent adapts its approach based on what has already been tried and what has worked.</p>
-        <p>Its role is to:</p>
-        <ul class="aura-role-list">
-          <li>Provide exercises, examples, links, games, videos, and explanations tailored to the student's level</li>
-          <li>Adapt explanations to the student's learning style and identified difficulties</li>
-          <li>Suggest material for repetition or deeper exploration based on progress patterns</li>
-          <li>Identify individual strengths and weaknesses throughout the course</li>
-          <li>Guide the student through daily learning phases from introduction to application</li>
-          <li>Prepare short daily reflections summarising progress, gaps, and recommended next steps</li>
-          <li>Recommend what the student should continue, repeat, or raise with the teacher</li>
-        </ul>
+        <div class="detail-content al-reveal">
+          <p class="lead">Each student has an individual AI guide. If a student struggles with a mathematical concept, the agent first provides an intuitive explanation, then a visual example, then a guided exercise, and finally a question that checks independent application. The agent adapts based on what has been tried and what has worked.</p>
+          <p>The Student Agent's role is to:</p>
+          <ul class="aura-role-list">
+            <li>Provide exercises, examples, links, games, videos, and explanations tailored to the student's level</li>
+            <li>Adapt explanations to the student's learning style and identified difficulties</li>
+            <li>Suggest material for repetition or deeper exploration based on progress patterns</li>
+            <li>Identify individual strengths and weaknesses throughout the course</li>
+            <li>Guide the student through daily learning phases from introduction to application</li>
+            <li>Prepare short daily reflections summarising progress, gaps, and recommended next steps</li>
+            <li>Recommend what the student should continue, repeat, or raise with the teacher</li>
+          </ul>
+        </div>
       </div>
+    </div>
+  </section>
 
-      <!-- Teacher Agent -->
-      <div class="aura-section">
-        <div class="aura-section-header">
-          <div class="aura-section-icon aura-section-icon-green">👩‍🏫</div>
+  <!-- ═══════════════ DETAILED: TEACHER ═══════════════ -->
+  <section class="section section-white" id="teacher-detail">
+    <div class="container">
+      <div class="detail-layout detail-layout-reverse">
+        <div class="detail-aside al-reveal">
+          <div class="detail-aside-icon dai-tea">👩‍🏫</div>
           <h2>The Teacher Agent</h2>
+          <p class="detail-level">Group Level · Pedagogical Intelligence</p>
+          <p class="detail-aside-blurb">Transforms individual student reports into actionable pedagogical intelligence. It identifies patterns that would otherwise be difficult to detect in a large or diverse class.</p>
         </div>
-        <p class="lead">The teacher agent supports the lecturer by transforming individual student reports into actionable pedagogical intelligence. It receives summaries from all student agents and identifies patterns that would otherwise be difficult to detect in a large or diverse class.</p>
-        <p>Its role is to help the teacher answer questions such as:</p>
-        <ul class="aura-role-list">
-          <li>Which topics are students understanding well, and which are creating persistent confusion?</li>
-          <li>Which types of explanations have already been tried — and which have helped most?</li>
-          <li>Which students may need additional support or a different approach?</li>
-          <li>Is the group progressing at the expected pace, or does the plan need adjustment?</li>
-          <li>Should the next session include review, practice, open discussion, or new material?</li>
-          <li>Are additional face-to-face sessions needed, and on which specific topics?</li>
-        </ul>
-        <p>The teacher agent becomes a pedagogical assistant. It does not decide for the teacher, but it helps the teacher see the patterns, prepare well, and make informed decisions about how to best use limited classroom time.</p>
+        <div class="detail-content al-reveal">
+          <p class="lead">The teacher agent helps the lecturer answer questions that would otherwise require reviewing dozens of individual reports.</p>
+          <ul class="aura-role-list">
+            <li>Which topics are students understanding well, and which are creating persistent confusion?</li>
+            <li>Which types of explanations have already been tried — and which have helped most?</li>
+            <li>Which students may need additional support or a different approach?</li>
+            <li>Is the group progressing at the expected pace, or does the plan need adjustment?</li>
+            <li>Should the next session include review, practice, open discussion, or new material?</li>
+            <li>Are additional face-to-face sessions needed, and on which specific topics?</li>
+          </ul>
+          <div class="detail-note">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            The teacher agent <em>does not decide</em> for the teacher — it helps the teacher see patterns, prepare well, and make informed decisions. The human teacher remains the pedagogical authority.
+          </div>
+        </div>
       </div>
+    </div>
+  </section>
 
-      <!-- Face-to-Face Sessions -->
-      <div class="aura-section">
-        <div class="aura-section-header">
-          <div class="aura-section-icon aura-section-icon-green">🏫</div>
+  <!-- ═══════════════ FACE-TO-FACE ═══════════════ -->
+  <section class="section section-azure">
+    <div class="container">
+      <div class="f2f-layout">
+        <div class="f2f-icon-col al-reveal">
+          <div class="f2f-icon">🏫</div>
+        </div>
+        <div class="f2f-content al-reveal">
+          <span class="section-tag" style="display:inline-block; margin-bottom: 12px;">Hybrid Learning</span>
           <h2>Face-to-Face Learning Sessions</h2>
+          <p class="lead">During planned in-person or synchronous sessions, the teacher remains the main driver of the learning process. AURA-Learn enriches — not replaces — these sessions.</p>
+          <p>Before a session, the teacher agent may indicate that several students understand the definition of a concept but struggle to apply it in a real case. It may suggest opening the session with a practical example, asking students to explain their reasoning aloud, then providing a complementary explanation bridging theory and application.</p>
+          <p>In this way, the AI system enriches the teacher's work. It creates space for student questions, peer discussion, and teacher-led clarification. The human teacher remains responsible for judgment, motivation, interpretation, and the final pedagogical direction. <strong>The agent provides intelligence; the teacher provides wisdom.</strong></p>
         </div>
-        <p class="lead">During planned in-person or synchronous sessions, the teacher remains the main driver of the learning process. AURA-Learn enriches — not replaces — these sessions.</p>
-        <p>Before a session, the teacher agent may indicate that several students understand the definition of a concept but struggle to apply it in a real case. It may suggest that the teacher opens the session with a practical example, asks students to explain their reasoning aloud, and then provides a complementary explanation that bridges theory and application.</p>
-        <p>In this way, the AI system enriches the teacher's work. It creates space for student questions, peer discussion, and teacher-led clarification. The human teacher remains responsible for judgment, motivation, interpretation, and the final pedagogical direction. The agent provides intelligence; the teacher provides wisdom.</p>
       </div>
+    </div>
+  </section>
 
-      <!-- Evaluator Agent -->
-      <div class="aura-section">
-        <div class="aura-section-header">
-          <div class="aura-section-icon aura-section-icon-purple">📊</div>
+  <!-- ═══════════════ DETAILED: EVALUATOR ═══════════════ -->
+  <section class="section section-white" id="evaluator-detail">
+    <div class="container">
+      <div class="detail-layout">
+        <div class="detail-aside al-reveal">
+          <div class="detail-aside-icon dai-eva">📊</div>
           <h2>The Independent Evaluator Agent</h2>
+          <p class="detail-level">Course Level · Longitudinal Evidence</p>
+          <p class="detail-aside-blurb">Follows the entire course from a neutral, longitudinal perspective — observing reports from the student agents, the teacher agent, and course development across time and cohorts.</p>
         </div>
-        <p class="lead">The independent evaluator agent follows the entire course from a neutral, longitudinal perspective — observing reports from the student agents, the teacher agent, learning activities, and course development across time.</p>
-        <p>This component is important because it transforms the course into a learning system. Each new edition of the course benefits from the accumulated evidence of previous editions, making the framework self-improving over time.</p>
-        <p>Its role is to:</p>
-        <ul class="aura-role-list">
-          <li>Evaluate knowledge before and after the course using structured pre/post assessments</li>
-          <li>Monitor learning progression across days or weeks, identifying acceleration and plateaus</li>
-          <li>Identify which teaching strategies were most effective for which student profiles</li>
-          <li>Compare expected learning outcomes with actual measured progress</li>
-          <li>Detect gaps between individual student learning and group-level outcomes</li>
-          <li>Provide recommendations for future editions of the course</li>
-          <li>Contribute to a long-term database of learning evidence across cohorts</li>
-        </ul>
+        <div class="detail-content al-reveal">
+          <p class="lead">This component transforms the course into a self-improving learning system. Each new edition benefits from the accumulated evidence of previous editions.</p>
+          <ul class="aura-role-list">
+            <li>Evaluate knowledge before and after the course using structured pre/post assessments</li>
+            <li>Monitor learning progression across days or weeks, identifying acceleration and plateaus</li>
+            <li>Identify which teaching strategies were most effective for which student profiles</li>
+            <li>Compare expected learning outcomes with actual measured progress</li>
+            <li>Detect gaps between individual student learning and group-level outcomes</li>
+            <li>Provide recommendations for future editions of the course</li>
+            <li>Contribute to a long-term database of learning evidence across cohorts</li>
+          </ul>
+        </div>
       </div>
-
     </div>
   </section>
 
   <!-- ═══════════════ DAILY CYCLE ═══════════════ -->
-  <section class="section section-light">
+  <section class="section section-azure">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">How it Works</span>
+        <span class="section-tag">How It Works</span>
         <h2 class="section-title">The Daily Learning Cycle</h2>
         <p class="section-subtitle">AURA-Learn operates through a structured six-phase daily cycle, with each agent responsible for specific phases of the process.</p>
       </div>
-      <div class="cycle-table-wrap">
-        <table class="cycle-table">
-          <thead>
-            <tr>
-              <th>Phase</th>
-              <th>Main Action</th>
-              <th>Responsible Agent</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1. Learning Activity</td>
-              <td>Student works with exercises, examples, videos, games, or explanations adapted to their current level and learning style</td>
-              <td>Student Agent</td>
-            </tr>
-            <tr>
-              <td>2. Reflection</td>
-              <td>Student agent identifies strengths, weaknesses, misconceptions, and areas to revisit or explore more deeply</td>
-              <td>Student Agent</td>
-            </tr>
-            <tr>
-              <td>3. Reporting</td>
-              <td>Student progress is summarised in a structured report and sent to the teacher agent for group-level synthesis</td>
-              <td>Student Agent</td>
-            </tr>
-            <tr>
-              <td>4. Pedagogical Synthesis</td>
-              <td>Teacher agent analyses all student reports, identifies group-level patterns, and generates teaching recommendations for the next session</td>
-              <td>Teacher Agent</td>
-            </tr>
-            <tr>
-              <td>5. Teaching Adaptation</td>
-              <td>Lecturer reviews agent recommendations, adjusts examples, questions, pace, or support sessions, and prepares the next face-to-face interaction</td>
-              <td>Teacher + Teacher Agent</td>
-            </tr>
-            <tr>
-              <td>6. Evaluation</td>
-              <td>Independent evaluator agent monitors progression, compares against expected outcomes, and updates the long-term learning evidence database</td>
-              <td>Evaluator Agent</td>
-            </tr>
-          </tbody>
-        </table>
+
+      <div class="cycle-steps al-reveal">
+        <div class="cycle-step">
+          <div class="cycle-step-num" style="background: var(--sky);">1</div>
+          <div class="cycle-step-body">
+            <div class="cycle-step-agent">Student Agent</div>
+            <h4>Learning Activity</h4>
+            <p>Student works with exercises, examples, videos, games, or explanations adapted to their current level and learning style.</p>
+          </div>
+        </div>
+        <div class="cycle-step">
+          <div class="cycle-step-num" style="background: #0277bd;">2</div>
+          <div class="cycle-step-body">
+            <div class="cycle-step-agent">Student Agent</div>
+            <h4>Reflection</h4>
+            <p>Agent identifies strengths, weaknesses, misconceptions, and areas to revisit or explore more deeply.</p>
+          </div>
+        </div>
+        <div class="cycle-step">
+          <div class="cycle-step-num" style="background: var(--teal);">3</div>
+          <div class="cycle-step-body">
+            <div class="cycle-step-agent">Student Agent</div>
+            <h4>Reporting</h4>
+            <p>Student progress is summarised in a structured report and sent to the teacher agent for group-level synthesis.</p>
+          </div>
+        </div>
+        <div class="cycle-step">
+          <div class="cycle-step-num" style="background: #00695c;">4</div>
+          <div class="cycle-step-body">
+            <div class="cycle-step-agent">Teacher Agent</div>
+            <h4>Pedagogical Synthesis</h4>
+            <p>Teacher agent analyses all student reports, identifies group-level patterns, and generates teaching recommendations.</p>
+          </div>
+        </div>
+        <div class="cycle-step">
+          <div class="cycle-step-num" style="background: var(--navy);">5</div>
+          <div class="cycle-step-body">
+            <div class="cycle-step-agent">Teacher + Teacher Agent</div>
+            <h4>Teaching Adaptation</h4>
+            <p>Lecturer reviews recommendations, adjusts examples, pace, or support sessions, and prepares the next interaction.</p>
+          </div>
+        </div>
+        <div class="cycle-step">
+          <div class="cycle-step-num" style="background: #6d28d9;">6</div>
+          <div class="cycle-step-body">
+            <div class="cycle-step-agent">Evaluator Agent</div>
+            <h4>Evaluation</h4>
+            <p>Independent evaluator monitors progression, compares against expected outcomes, and updates the long-term learning evidence database.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════ FULL DESCRIPTION ═══════════════ -->
+  <!-- ═══════════════ FRAMEWORK SUMMARY ═══════════════ -->
   <section class="section section-white">
     <div class="container">
       <div class="section-header">
         <span class="section-tag">Framework Summary</span>
         <h2 class="section-title">AURA-Learn in Full</h2>
       </div>
-      <div class="aura-callout">
-        <p>
-          AURA-Learn — Agentic Understanding, Reflection and Adaptation for Learning — is an AI-supported
-          educational framework designed to personalise learning while strengthening the role of the teacher.
-          Each student is supported by an AI learning guide that provides exercises, examples, links, games,
-          videos, and explanations adapted to the student's learning style and progress. The student agent
-          follows the phases of the learning process and produces daily reflections on strengths, weaknesses,
-          and recommended learning paths.
-        </p>
-        <p style="margin-top: 16px;">
-          These reports are shared with a teacher agent, which synthesises the progress of the group,
-          identifies common difficulties, suggests examples and questions, and helps the lecturer decide
-          whether the course pace is appropriate or whether additional support is needed. During face-to-face
-          sessions, the teacher agent assists the lecturer in preparing targeted discussions, while the teacher
-          remains the main driver of the learning process.
-        </p>
-        <p style="margin-top: 16px;">
-          An independent evaluator agent follows the course development, compares knowledge before and after
-          the training, and contributes to a growing database of learning evidence. In this way, AURA-Learn
-          creates a progressive learning system in which students receive personalised guidance, teachers
-          receive pedagogical intelligence, and future courses improve through accumulated knowledge.
-        </p>
-        <cite>— Ai-LEARN Consortium, 2025</cite>
+
+      <div class="aura-summary-card al-reveal">
+        <div class="summary-quote-mark">"</div>
+        <div class="summary-body">
+          <p>
+            AURA-Learn — <em>Agentic Understanding, Reflection and Adaptation for Learning</em> — is an AI-supported
+            educational framework designed to personalise learning while strengthening the role of the teacher.
+            Each student is supported by an AI learning guide that provides exercises, examples, links, games,
+            videos, and explanations adapted to the student's learning style and progress.
+          </p>
+          <p>
+            These reports are shared with a teacher agent, which synthesises the progress of the group,
+            identifies common difficulties, suggests examples and questions, and helps the lecturer decide
+            whether the course pace is appropriate or whether additional support is needed. During face-to-face
+            sessions, the teacher agent assists the lecturer in preparing targeted discussions, while the teacher
+            remains the main driver of the learning process.
+          </p>
+          <p>
+            An independent evaluator agent follows the course development, compares knowledge before and after
+            the training, and contributes to a growing database of learning evidence. In this way, AURA-Learn
+            creates a progressive learning system in which students receive personalised guidance, teachers
+            receive pedagogical intelligence, and future courses improve through accumulated knowledge.
+          </p>
+          <cite>— Ai-LEARN Consortium, 2025</cite>
+        </div>
       </div>
 
-      <div class="section-header" style="margin-top: 64px;">
+      <!-- Three agent recap -->
+      <div class="section-header" style="margin-top: 80px;">
         <span class="section-tag">Architecture</span>
         <h2 class="section-title">Three-Agent Pedagogical Architecture</h2>
         <p class="section-subtitle">Together, the three agents create a continuous feedback loop between learning, teaching, and evaluation.</p>
       </div>
-      <div class="agent-cards-grid">
-        <div class="agent-card agent-card-student">
-          <div class="agent-card-icon">🧑‍🎓</div>
+
+      <div class="agents-trio">
+        <div class="agent-tile student al-reveal">
+          <div class="agent-tile-head">
+            <div class="agent-tile-icon ati-stu">🧑‍🎓</div>
+            <span class="agent-tier-badge badge-stu">Individual</span>
+          </div>
           <h3>Student Agent</h3>
           <p>Personalised guidance, exercises, feedback, and daily learning reflection. Works at the individual level, adapting in real time to each student's trajectory.</p>
         </div>
-        <div class="agent-card agent-card-teacher">
-          <div class="agent-card-icon">👩‍🏫</div>
+        <div class="agent-tile teacher al-reveal">
+          <div class="agent-tile-head">
+            <div class="agent-tile-icon ati-tea">👩‍🏫</div>
+            <span class="agent-tier-badge badge-tea">Group</span>
+          </div>
           <h3>Teacher Agent</h3>
           <p>Synthesis of student progress, teaching recommendations, and support for face-to-face sessions. Works at the group level, informing the lecturer's pedagogical decisions.</p>
         </div>
-        <div class="agent-card agent-card-evaluator">
-          <div class="agent-card-icon">📊</div>
+        <div class="agent-tile evaluator al-reveal">
+          <div class="agent-tile-head">
+            <div class="agent-tile-icon ati-eva">📊</div>
+            <span class="agent-tier-badge badge-eva">Course</span>
+          </div>
           <h3>Evaluator Agent</h3>
           <p>Independent monitoring of course development, knowledge gain, and long-term improvement. Works at the course level, feeding insights across cohorts and editions.</p>
         </div>

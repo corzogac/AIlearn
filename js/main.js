@@ -84,3 +84,44 @@ fadeEls.forEach((el, i) => {
   el.style.transition = `opacity 0.5s ease ${(i % 6) * 0.07}s, transform 0.5s ease ${(i % 6) * 0.07}s`;
   fadeObserver.observe(el);
 });
+
+// ── AURA-Learn scroll-reveal (.al-reveal) ─────
+const alRevealObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      const delay = parseFloat(entry.target.dataset.delay || 0);
+      setTimeout(() => {
+        entry.target.classList.add('al-visible');
+      }, delay);
+      alRevealObserver.unobserve(entry.target);
+    }
+  });
+}, { rootMargin: '0px 0px -60px 0px' });
+
+document.querySelectorAll('.al-reveal').forEach((el, i) => {
+  // Stagger siblings within the same parent
+  const siblings = el.parentElement ? el.parentElement.querySelectorAll('.al-reveal') : [];
+  const idx = Array.from(siblings).indexOf(el);
+  el.dataset.delay = idx * 90;
+  alRevealObserver.observe(el);
+});
+
+// ── Lightbox ──────────────────────────────────
+function openLightbox() {
+  const overlay = document.getElementById('lbOverlay');
+  if (!overlay) return;
+  overlay.classList.add('lb-active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  const overlay = document.getElementById('lbOverlay');
+  if (!overlay) return;
+  overlay.classList.remove('lb-active');
+  document.body.style.overflow = '';
+}
+
+// Close lightbox with Escape key
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeLightbox();
+});
