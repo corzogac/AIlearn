@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-Content \"c:\\\\Users\\\\gco\\\\Dropbox\\\\04-Work\\\\Projects\\\\Running\\\\Erasmus+\\\\DigitalProducts\\\\01-MainWebsite\\\\css\\\\style.css\")",
+      "Bash(Measure-Object -Line)",
+      "PowerShell(\\(Get-Content \"c:\\\\Users\\\\gco\\\\Dropbox\\\\04-Work\\\\Projects\\\\Running\\\\Erasmus+\\\\DigitalProducts\\\\01-MainWebsite\\\\css\\\\style.css\"\\).Count)"
+    ]
+  }
+}
